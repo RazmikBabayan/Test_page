@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Александр | Ведущий свадеб</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="title">АЛЕКСАНДР ВЕДУЩИЙ</div>
+    <nav class="menu">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+  
+  <main class="main">
+    <section class="hero">
+      <h1>Создам для вас идеальную свадьбу</h1>
+      <p>Тепло, профессионализм, стиль</p>
+    </section>
+
+  <section class="coat">
+    <div class="letter" data-city="Москва">А</div>
+    <div class="letter" data-city="Санкт-Петербург">Л</div>
+    <div class="letter" data-city="Минск">Е</div>
+    <div class="letter" data-city="Варшава">К</div>
+    <div class="letter" data-city="Будапешт">С</div>
+    <div class="letter" data-city="Киев">А</div>
+    <div class="letter" data-city="Прага">Н</div>
+    <div class="letter" data-city="Тбилиси">Д</div>
+    <div class="letter" data-city="Берлин">Р</div>
+  </section>
+
+
+  <section class="coat-full">
+    <div class="coat-toggle">АЛЕКСАНДР</div>
+    <div class="coat-content">
+      <div>Москва</div>
+      <div>Санкт-Петербург</div>
+      <div>Минск</div>
+      <div>Варшава</div>
+      <div>Будапешт</div>
+      <div>Киев</div>
+      <div>Прага</div>
+      <div>Тбилиси</div>
+      <div>Берлин</div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const coat = document.querySelector(".coat-full");
+      const toggle = coat.querySelector(".coat-toggle");
+
+      toggle.addEventListener("click", () => {
+        coat.classList.toggle("open");
+      });
+    });
+  </script>
+
+  </main>
+  
+  <footer class="footer">
+    <div>© 2025 Александр Ведущий</div>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Telegram</a>
+    </div>
+  </footer>
+</body>
+</html>
